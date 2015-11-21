@@ -39,8 +39,8 @@ shinyServer(function(input, output) {
     if(input$Calculate == 0) ""
     else
     if (values$bmi<18.5) info=("UNDERWEIGHT") 
-    else if (values$bmi>=8.5 & values$bmi<24.9) info=("HEALTHY WEIGHT")
-    else if (values$bmi>=25 & values$bmi<29.9) info=("OVERWEIGHT")
+    else if (values$bmi>=18.5 & values$bmi<25) info=("HEALTHY WEIGHT")
+    else if (values$bmi>=25 & values$bmi<30) info=("OVERWEIGHT")
     else if (values$bmi>=30) info=("OBESE")
     else info="NA"
 
